@@ -3,10 +3,13 @@ import createImageUrlBuilder from "@sanity/image-url";
 
 export const config = {
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
-  projectId: "m7s3usfm",
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   apiVersion: "2021-10-21",
   useCdn: process.env.NODE_ENV === "production",
+<<<<<<< HEAD
 
+=======
+>>>>>>> dbaea1e4e1fcf0bd51d1a05018c14e148424bed5
 };
 
 export const sanityClient = createClient(config);
